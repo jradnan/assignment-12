@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 // import ManageProducts from './Component/Dashboard/ManageProduct';
-// import Dashboard from './Component/Dashboard/Dashboard';
+import Dashboard from './Component/Dashboard/Dashboard';
 import Footer from './Component/Footer/Footer';
 import Home from './Component/Home/Home';
 import Navbar from './Component/Navbar/Navbar';
@@ -10,19 +10,19 @@ import Login from './Component/User/Login';
 import Register from './Component/User/Registar';
 import AddProduct from './Component/Dashboard/AddProduct';
 import ProductDetails from './Component/Product/ProductDetails';
-// import Orders from './Component/Dashboard/Orders';
+import Orders from './Component/Dashboard/Orders';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 // import Payment from './Component/Dashboard/Payment';
 import Reviews from './Component/Review/Reviews';
 import RequireAuth from './Component/Requireauth/RequireAuth';
-// import AllUsers from './Component/Dashboard/AllUsers';
+import AllUsers from './Component/Dashboard/AllUsers';
 import About from './Component/About/About';
 import AddReview from './Component/Review/AddReview';
 import Contact from './Component/Contact/Contact';
 // import Portfolio from './Component/Portfolio/Portfolio';
 // import Profile from './Component/Dashboard/Profile';
-// import AllOrders from './Component/Dashboard/AllOrders';
+import AllOrders from './Component/Dashboard/AllOrders';
 import Blog from './Component/Blog/Blog';
 import useUser from './Component/Hook/useUser';
 
@@ -50,10 +50,10 @@ function App() {
           <Route path='/register' element={<Register />} />
           <Route path='/login' element={<Login />} />
           <Route path='/dashboard' element={<RequireAuth>
-            {/* <Dashboard /> */}
+            <Dashboard />
           </RequireAuth>}>
             {/* <Route index element={currentUser?.role === "admin" ? <AllOrders /> : <Orders />} /> */}
-            {/* <Route path='orders' element={currentUser?.role === "admin" ? <AllOrders /> : <Orders />} /> */}
+            <Route path='orders' element={currentUser?.role === "admin" ? <AllOrders /> : <Orders />} />
             {/* <Route path='profile' element={<Profile />} /> */}
             {/* <Route path='payment' element={<Payment />} /> */}
             <Route path='review' element={<AddReview show={show} />} />
@@ -62,7 +62,7 @@ function App() {
               <>
                 <Route path='products-add' element={<AddProduct />} />
                 {/* <Route path='products-manage' element={<ManageProducts />} /> */}
-                {/* <Route path='all-users' element={<AllUsers />} /> */}
+                <Route path='all-users' element={<AllUsers />} />
               </>
             }
           </Route>
