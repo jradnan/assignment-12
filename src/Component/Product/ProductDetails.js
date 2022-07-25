@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useQuery } from 'react-query'
 import { useLocation } from 'react-router-dom'
-// import Loading from '../Loading/Loading'
+import Loading from '../Loading/Loading'
 import Order from './Order'
 
 const ProductDetails = () => {
@@ -20,9 +20,9 @@ const ProductDetails = () => {
             res.json()
         )
     )
-    // if (isLoading) {
-    //     return <Loading />
-    // }
+    if (isLoading) {
+        return <Loading />
+    }
     return (
         <div>
             <div className="hero py-14 items-start bg-base-200">

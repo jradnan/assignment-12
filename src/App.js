@@ -8,7 +8,7 @@ import Navbar from './Component/Navbar/Navbar';
 import Product from './Component/Product/Product';
 import Login from './Component/User/Login';
 import Register from './Component/User/Registar';
-// import AddProduct from './Component/Dashboard/AddProduct';
+import AddProduct from './Component/Dashboard/AddProduct';
 import ProductDetails from './Component/Product/ProductDetails';
 // import Orders from './Component/Dashboard/Orders';
 import { ToastContainer } from 'react-toastify';
@@ -60,7 +60,7 @@ function App() {
             {
               currentUser?.role === "admin" &&
               <>
-                {/* <Route path='products-add' element={<AddProduct />} /> */}
+                <Route path='products-add' element={<AddProduct />} />
                 {/* <Route path='products-manage' element={<ManageProducts />} /> */}
                 {/* <Route path='all-users' element={<AllUsers />} /> */}
               </>
