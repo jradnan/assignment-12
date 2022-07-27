@@ -34,7 +34,7 @@ const ProductDetails = () => {
                         <p className='mt-5 font-bold text-neutral'>Quantity : {data.quantity} p</p>
                         <p className='mt-5 font-bold text-neutral'>Min Order : {data.quantity > 300 ? 300 : data.quantity} p</p>
                         <p className="py-6">{data.description}</p>
-                        <button onClick={() => setShow(true)} className="btn btn-primary">Order Now</button>
+                        <button onClick={() => setShow(true)} className="btn border-none bg-red-600">Order Now</button>
                     </div>
                 </div>
             </div>

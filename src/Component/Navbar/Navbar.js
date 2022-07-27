@@ -20,7 +20,7 @@ const Navbar = () => {
                             <Navigations user={user} />
                         </ul>
                     </div>
-                    <Link to='/' className="btn btn-ghost text-neutral normal-case text-2xl">Bike's Parts</Link>
+                    <Link to='/' className="btn btn-ghost text-neutral normal-case text-2xl">Motor Bike's Parts</Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu text-neutral menu-horizontal p-0">

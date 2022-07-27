@@ -14,7 +14,7 @@ const ProductCard = ({ product }) => {
                 <p>Quantity : {quantity} p</p>
                 <p>{description.length > 100 ? description.slice(0, 100) + "...." : description} </p>
                 <div className="card-actions justify-start mt-3">
-                    <Link to={`/product/${_id}`} className="btn btn-primary">View Product</Link>
+                    <Link to={`/product/${_id}`} className="btn border-none bg-red-600	">View Product</Link>
                 </div>
             </div>
         </div>
