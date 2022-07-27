@@ -6,12 +6,13 @@ import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import auth from '../Firebase/Firebase.init';
 
 const Register = () => {
+    const id = `2b63e962ad9acbd05c8c94f1b365b4af `;
     const [error, setError] = useState('')
     const [loading, setLoading] = useState(false)
     const location = useLocation()
     const from = location.state?.from?.pathname || '/'
     const navigate = useNavigate()
-    const url = `https://api.imgbb.com/1/upload?key=2b63e962ad9acbd05c8c94f1b365b4af`;
+    const url = `https://api.imgbb.com/1/upload?key=${id}`;
     const { register, formState: { errors }, handleSubmit } = useForm();
     const onSubmit = (data) => {
         setLoading(true)
