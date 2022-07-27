@@ -20,7 +20,7 @@ import AllUsers from './Component/Dashboard/AllUsers';
 import About from './Component/About/About';
 import AddReview from './Component/Review/AddReview';
 import Contact from './Component/Contact/Contact';
-// import Portfolio from './Component/Portfolio/Portfolio';
+import Portfolio from './Component/Portfolio/Portfolio';
 // import Profile from './Component/Dashboard/Profile';
 import AllOrders from './Component/Dashboard/AllOrders';
 import Blog from './Component/Blog/Blog';
@@ -42,7 +42,7 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/blogs' element={<Blog />} />
           <Route path='/contact' element={<Contact />} />
-          {/* <Route path='/portfolio' element={<Portfolio />} /> */}
+          <Route path='/portfolio' element={<Portfolio />} />
           <Route path='/product' element={<Product />} />
           <Route path='/product/:id' element={<RequireAuth>
             <ProductDetails />
